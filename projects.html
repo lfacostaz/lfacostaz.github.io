@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis Felipe Acosta | Projects</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+
+    <div class="site-title">Luis Felipe Acosta</div>
+
+    <img src="assets/images/profile.jpeg" 
+         alt="Luis Felipe Acosta" 
+         class="profile-photo-sidebar">
+
+    <div class="site-subtitle">
+      Political Risk and Policy Analysis with Data
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</aside>
+
+<main class="content">
+  <div class="content-inner">
+
+    <div style="max-width: 860px; margin: 0 auto;">
+      <h1 style="text-align: center;">Projects</h1>
+
+      <p style="text-align: justify;">
+        Selected projects in policy analysis and political risk. The projects use data and computational methods to produce insights.
+      </p>
+
+      <h2 style="text-align: justify;">APEC Projects: Structure and Funding Patterns</h2>
+
+      <p style="text-align: justify;">
+        Interactive dataset and dashboard developed to address limitations in access, comparability and analysis of APEC projects data.
+      </p>
+
+      <ul style="text-align: left; line-height: 1.75;">
+        <li>Builds a structured dataset of APEC projects using Python and R for data extraction, processing and visualization.</li>
+        <li>Organizes project information to enable filtering by year, economy, forum, topic, funding source, among others.</li>
+        <li>Supports analysis of project distribution, funding patterns and activity trends across APEC.</li>
+      </ul>
+
+      <p style="text-align: justify;">
+        The dashboard allows for the analysis of APEC project activity and funding patterns.
+      </p>
+      
+      <p style="text-align: center; margin-top: 20px;">
+        
+        <span style="display: inline-block; margin: 0 20px; text-align: center;">
+          
+          <a href="https://lfacostaz.shinyapps.io/dashboard_proyectos_apec/" target="_blank">
+            
+            <img src="assets/images/icons/shiny.png" 
+            alt="Shiny Dashboard"
+            style="width: 56px; display: block; margin: 0 auto;">
+          
+          </a>
+
+          <span style="font-size: 0.9rem;">Dashboard</span>
+       
+        </span>
+        
+        <span style="display: inline-block; margin: 0 20px; text-align: center;">
+         
+          <a href="https://github.com/lfacostaz/dashboard-apec-projects" target="_blank">
+            
+            <img src="assets/images/icons/github.png" 
+            alt="GitHub Repository" 
+            style="width: 56px; display: block; margin: 0 auto;">
+          
+          </a>
+         
+          <span style="font-size: 0.9rem;">Code</span>
+       
+        </span>
+      
+      </p>
+   
+    </div>
+  
+  </div>
+</main>
+
+  <script>
+    const toggleButton = document.querySelector(".menu-toggle");
+    const sidebar = document.querySelector("#sidebar");
+
+    toggleButton.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+      const expanded = toggleButton.getAttribute("aria-expanded") === "true";
+      toggleButton.setAttribute("aria-expanded", String(!expanded));
+    });
+  </script>
+</body>
+</html>

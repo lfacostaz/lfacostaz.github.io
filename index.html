@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis Felipe Acosta | About</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+
+    <div class="site-title">Luis Felipe Acosta</div>
+
+    <img src="assets/images/profile.jpeg" 
+         alt="Luis Felipe Acosta" 
+         class="profile-photo-sidebar">
+
+    <div class="site-subtitle">
+      Political Risk and Policy Analysis with Data
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="active">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</aside>
+
+  <main class="content">
+    <div class="content-inner">
+      
+      <h1>About</h1>
+      
+      <p>I work in political risk and public policy analysis, combining social science approaches with computational methods to produce insights for decision-making in complex and uncertain contexts. This includes preparing political risk briefs and reports, as well as developing tools to organize and analyze political and policy information.
+      </p>
+      
+      <p>My experience includes legal advisory in regulatory law (public and private sectors), public affairs consulting, academic research, and international affairs within government.</p>
+      
+      <p>I hold bachelor's degrees in Law and International Relations from Pontificia Universidad Católica del Perú, with studies at Universidad Carlos III de Madrid and Masaryk University. I have additional training in data science and international development project management.</p>
+      
+      <p>Currently contributing to Peru's trade and investment policy in the APEC forum at the Ministry of Foreign Trade and Tourism, supporting inter-institutional coordination.</p>
+      
+      <p>You can find my CV <a href="assets/files/cv.pdf" target="_blank">here</a>.</p>
+      
+    </div>
+  </main>
+
+  <script>
+    const toggleButton = document.querySelector(".menu-toggle");
+    const sidebar = document.querySelector("#sidebar");
+
+    toggleButton.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+      const expanded = toggleButton.getAttribute("aria-expanded") === "true";
+      toggleButton.setAttribute("aria-expanded", String(!expanded));
+    });
+  </script>
+</body>
+</html>

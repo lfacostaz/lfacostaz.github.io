@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis Felipe Acosta | Contact</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+
+    <div class="site-title">Luis Felipe Acosta</div>
+
+    <img src="assets/images/profile.jpeg" 
+         alt="Luis Felipe Acosta" 
+         class="profile-photo-sidebar">
+
+    <div class="site-subtitle">
+      Political Risk and Policy Analysis with Data
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+  </div>
+</aside>
+
+  <main class="content">
+    <div class="content-inner">
+      <h1>Contact</h1>
+
+      <p style="text-align: justify;">
+        For inquiries or collaboration, feel free to reach out:
+      </p>
+      
+      <p style="text-align: center; margin-top: 20px;">
+
+        <span style="display: inline-block; margin: 0 20px; text-align: center;">
+          <a href="mailto:lf.acosta1596@gmail.com">
+            <img src="assets/images/icons/gmail.png"
+                alt="Email"
+                style="width: 50px; display: block; margin: 0 auto;">
+          </a>
+          <span style="font-size: 0.9rem;">Email</span>
+        </span>
+
+        <span style="display: inline-block; margin: 0 20px; text-align: center;">
+          <a href="https://www.linkedin.com/in/lacosta96/" target="_blank">
+            <img src="assets/images/icons/linkedin.png"
+                alt="LinkedIn"
+                style="width: 50px; display: block; margin: 0 auto;">
+          </a>
+          <span style="font-size: 0.9rem;">LinkedIn</span>
+        </span>
+
+        <span style="display: inline-block; margin: 0 20px; text-align: center;">
+          <a href="https://github.com/lfacostaz" target="_blank">
+            <img src="assets/images/icons/github.png"
+                alt="GitHub"
+                style="width: 50px; display: block; margin: 0 auto;">
+          </a>
+          <span style="font-size: 0.9rem;">GitHub</span>
+        </span>
+
+        <span style="display: inline-block; margin: 0 20px; text-align: center;">
+          <a href="https://substack.com/@lfacostaz" target="_blank">
+            <img src="assets/images/icons/substack.png"
+                alt="Substack"
+                style="width: 50px; display: block; margin: 0 auto;">
+          </a>
+          <span style="font-size: 0.9rem;">Substack</span>
+        </span>
+
+        <span style="display: inline-block; margin: 0 20px; text-align: center;">
+          <a href="https://x.com/acosta1596" target="_blank">
+            <img src="assets/images/icons/x.png"
+                alt="X"
+                style="width: 50px; display: block; margin: 0 auto;">
+          </a>
+          <span style="font-size: 0.9rem;">X</span>
+        </span>
+
+      </p>
+
+    </div>
+  </main>
+
+  <script>
+    const toggleButton = document.querySelector(".menu-toggle");
+    const sidebar = document.querySelector("#sidebar");
+
+    toggleButton.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+      const expanded = toggleButton.getAttribute("aria-expanded") === "true";
+      toggleButton.setAttribute("aria-expanded", String(!expanded));
+    });
+  </script>
+</body>
+</html>
